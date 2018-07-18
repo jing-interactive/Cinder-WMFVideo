@@ -51,7 +51,7 @@ void SimplePlaybackApp::draw()
 void SimplePlaybackApp::setup()
 {
 	std::string videoPath = getAssetPath( "1.wmv" ).string();
-	mVideo1.loadMovie( videoPath, "Headphones (High Definition Audio Device)" );
+	mVideo1.loadMovie( videoPath, "Headset Earphone (Plantronics C320-M)" );
 	mVideo1.play();
 	mVideo1.getPresentationEndedSignal().connect( []() {
 		ci::app::console() << "Video finished playing!" << std::endl;

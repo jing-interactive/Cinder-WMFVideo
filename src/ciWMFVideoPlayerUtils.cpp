@@ -1032,7 +1032,7 @@ HRESULT CreateMediaSinkActivate(
 
 						hr = PropVariantToString( varName, szName, ARRAYSIZE( szName ) );
 
-#if 0
+#ifdef _DEBUG
 						// list out audio devices
 						wstring ws( szName );
 						string str( ws.begin(), ws.end() );
